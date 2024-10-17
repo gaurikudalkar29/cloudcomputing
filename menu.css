@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --main-color:hsl(2, 100%, 61%);
+    --primary-color:hsl(3, 62%, 80%);
+    --bg-color: hsl(2, 100%, 97%)b;
+    --hover: hsl(2, 89%, 53%);
+    --black:#222;
+    --white:#fff;
+    --border:.1rem solid hsl(0, 54%, 84%);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background: var(--main-color);
+    border: var(--main-color);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.btn:hover{
+    background: var(--hover);
+}
+
+/* nav bar */
+
+#nav{
+    margin-bottom: auto;
+    width: 100%;
+    height: 8%;
+  } 
+  
+  .topnav {
+      overflow: visible;
+      background-color: hsl(2, 100%, 97%);
+      position: fixed;
+      width:inherit;
+      height: 10%;
+    }
+    
+    .topnav a {
+      margin-top: 1%;
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      color: hsl(2, 100%, 61%);
+      text-decoration: underline;
+    }
+    
+    .topnav a.active {
+      color: black;
+      color: hsl(2, 100%, 61%);
+    }
+
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Nanum+Myeongjo&family=Poiret+One&display=swap");
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Antic Didone", serif;
+      /* background-color: red; */
+    }
+    /* .nav-bar {
+      /* margin-left: 900px; */
+      /* margin-top: -25px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding-bottom: -10px;
+    } */ */
+
+    /* .nav-bar,
+    li,
+    ul,
+    a {
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      padding-left: -15px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 6px; */
+    /* } */
+    /* .about {
+      margin-left: 80px;
+    }
+    .contact {
+      margin-left: 70px;
+    } */
+    .home {
+      margin-left: 1000px;
+    }
+
+    /* ----------------------------- */
+    /* :root {
+      --Inter: "Inter", sans-serif;
+      --Kaushan: "Kaushan Script", cursive;
+      --Mont: "Montserrat", sans-serif;
+    } */
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    /* body {
+      line-height: 1.5;
+      background-image: url(menuBg.jpg);
+      background-size: cover;
+      color: #fff;
+    } */
+    .menu {
+      margin: 2rem 0;
+    }
+    .menu-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    .menu-head {
+      text-align: center;
+    }
+    .menu-head h2 {
+      font-family: var(--Kaushan);
+      font-size: 2.6rem;
+    }
+    .menu-head p {
+      font-weight: 300;
+      padding: 1.8rem 0;
+    }
+    .menu-btns {
+      padding: 0.6rem 0;
+      display: flex;
+      justify-content: center;
+    }
+    .menu-btn {
+      font-family: var(--Inter);
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background: none;
+      border: none;
+      color: #ff9505;
+      display: block;
+      margin: 0 1rem;
+      cursor: pointer;
+      outline: 0;
+      transition: opacity 0.4s ease-out;
+    }
+    .menu-btn::after {
+      content: "";
+      display: block;
+      height: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #ff9505;
+      margin-top: 0.5rem;
+      width: 0;
+      transition: width 0.4s ease-out;
+    }
+    .menu-btn:hover::after {
+      width: 100%;
+    }
+    .menu-btn:hover {
+      opacity: 0.8;
+    }
+    .active-btn {
+      color: #fff;
+    }
+    .food-items {
+      margin: 2rem 0;
+    }
+    .food-item {
+      border-radius: 4px;
+      overflow: hidden;
+      background: #fff;
+      color: #000;
+      margin: 0.6rem 0;
+      box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+      /* display: ; */
+      animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .food-img img {
+      border-radius: 4px;
+    }
+    .food-content {
+      padding: 1rem;
+    }
+    .food-name {
+      font-family: var(--Inter);
+      color: #ff9505;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    .line {
+      width: 100px;
+      height: 3px;
+      background: #ff9505;
+    }
+    .food-price {
+      padding: 0.4rem 0;
+      font-weight: 600;
+      font-size: 1.4rem;
+      opacity: 0.8;
+    }
+    .rating {
+      display: flex;
+      list-style: none;
+    }
+    .rating .fa-star {
+      margin-right: 0.4rem;
+      color: #44355b;
+    }
+    .category {
+      padding-top: 0.2rem;
+      font-size: 1rem;
+      font-weight: 800;
+      font-family: var(--Inter);
+    }
+    .category span {
+      font-weight: 500;
+    }
+
+    @media screen and (min-width: 600px) {
+      .food-item {
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap: 1rem;
+      }
+      .food-content {
+        padding: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .menu-head p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .menu-head p {
+        width: 50%;
+      }
+      .food-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+      }
+    }
